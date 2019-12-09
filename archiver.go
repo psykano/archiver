@@ -449,8 +449,6 @@ func ByExtension(filename string) (interface{}, error) {
 		return NewTarBz2(), nil
 	case *TarGz:
 		return NewTarGz(), nil
-	case *TarLz4:
-		return NewTarLz4(), nil
 	case *TarSz:
 		return NewTarSz(), nil
 	case *TarXz:
@@ -463,8 +461,6 @@ func ByExtension(filename string) (interface{}, error) {
 		return NewGz(), nil
 	case *Bz2:
 		return NewBz2(), nil
-	case *Lz4:
-		return NewLz4(), nil
 	case *Snappy:
 		return NewSnappy(), nil
 	case *Xz:
@@ -509,7 +505,6 @@ var extCheckers = []ExtensionChecker{
 	&TarBrotli{},
 	&TarBz2{},
 	&TarGz{},
-	&TarLz4{},
 	&TarSz{},
 	&TarXz{},
 	&TarZstd{},
@@ -519,7 +514,6 @@ var extCheckers = []ExtensionChecker{
 	&Brotli{},
 	&Gz{},
 	&Bz2{},
-	&Lz4{},
 	&Snappy{},
 	&Xz{},
 	&Zstd{},

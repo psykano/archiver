@@ -457,7 +457,6 @@ var archiveFormats = []interface{}{
 	DefaultTarBrotli,
 	DefaultTarBz2,
 	DefaultTarGz,
-	DefaultTarLz4,
 	DefaultTarSz,
 	DefaultTarXz,
 	DefaultTarZstd,
